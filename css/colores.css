@@ -1,88 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 @import url(../css/style.css);
 
-body{
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-header{
-    background: blue;
-    height: 80px;
-    position: relative;
-    justify-content: space-around;
-    display: flex;
-    
-
-}
-.aciertos{
-    width: 8%;
-    height: 60%;
-    border-radius: 10px;
-    background: rgb(157, 65, 157);
- 
-    
-}
-.errores{
-    width: 8%;
-    height: 60%;
-    border-radius: 10px;
-    background: rgb(212, 165, 212);
-    
-}
-h1{
-    font-size: 2em;
-}
-#rgb{
-    height: 25vw;
-    width: 100%;
-    background: rgb(73, 186, 199);
-    text-align: center;
-    font-size: 1.5em;
-    padding: 5% 0 0 0;
-}
-#colores{
-    height: 25vw;
-    width: 100%;
-    background: rgb(199, 159, 73);
-}
-ul{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
-li{
-    margin-top:2%;
+header {
+  background: blue;
+  height: 80px;
+  position: relative;
+  justify-content: space-around;
+  display: flex;
 }
 
-#circulo1{
-    height:100px;
-   width:100px;
-   background:#E76AFA;
-    text-align: center;
-   border-radius:50px;
-   
-   
-}
-#circulo2{
-    height:100px;
-   width:100px;
-   text-align: center;
-   background:#E76AFA;
-   border-radius:50px;
-}
-#circulo3{
-    height:100px;
-    width:100px;
-    background:#E76AFA;
-    text-align: center;
-    border-radius:50px;
+.aciertos {
+  width: 8%;
+  height: 60%;
+  border-radius: 10px;
+  background: rgb(157, 65, 157);
 }
 
-footer{
-    background-color: darkorange;
-    width: 100%;
-    height: 40%;
+.errores {
+  width: 8%;
+  height: 60%;
+  border-radius: 10px;
+  background: rgb(212, 165, 212);
+}
+
+h1 {
+  font-size: 2em;
+}
+#rgb {
+  height: 25vw;
+  width: 100%;
+  background: rgb(73, 186, 199);
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5% 0 0 0;
+}
+
+#colores {
+  height: 25vw;
+  width: 100%;
+  background: rgb(199, 159, 73);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+li {
+  margin-top: 2%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#circulo1 {
+  background: #e76afa;
+}
+
+#circulo2 {
+  background: #e76afa;
+}
+
+#circulo3 {
+  background: #e76afa;
+}
+
+footer {
+  background-color: darkorange;
+  width: 100%;
+  height: 40%;
 }
