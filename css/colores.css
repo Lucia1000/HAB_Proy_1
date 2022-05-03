@@ -57,7 +57,7 @@ li{
     margin-top:2%;
 }
 
-.circulo1{
+#circulo1{
     height:100px;
    width:100px;
    background:#E76AFA;
@@ -66,14 +66,14 @@ li{
    
    
 }
-.circulo2{
+#circulo2{
     height:100px;
    width:100px;
    text-align: center;
    background:#E76AFA;
    border-radius:50px;
 }
-.circulo3{
+#circulo3{
     height:100px;
     width:100px;
     background:#E76AFA;
