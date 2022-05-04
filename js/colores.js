@@ -13,7 +13,7 @@ const contadorErrores = document.querySelectorAll("#error"); //variable que most
 
 
 //Random logica
-/*1. Random de numero 0-255 */
+/*1. Random de numero 0-255(256) */
 const randomNumberRGB = () => {//Cada parámetro (rojo, verde y azul) define la intensidad del color entre 0 y 255.
   return Math.floor(Math.random() * 256);
 }
