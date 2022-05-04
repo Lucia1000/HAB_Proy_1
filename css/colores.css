@@ -33,7 +33,7 @@ h1 {
   font-size: 2em;
 }
 #rgb {
-  height: 25vw;
+  height: 50vw;
   width: 100%;
   background: rgb(73, 186, 199);
   text-align: center;
@@ -42,7 +42,7 @@ h1 {
 }
 
 #colores {
-  height: 25vw;
+  height: 50vw;
   width: 100%;
   background: rgb(199, 159, 73);
 }
@@ -54,7 +54,7 @@ ul {
 }
 
 li {
-  margin-top: 2%;
+  margin-top: 10%;
   height: 100px;
   width: 100px;
   text-align: center;
