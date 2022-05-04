@@ -3,6 +3,7 @@
 
 body{
     min-height: 100vh;
+    /*font-family: Muli,sans-serif;*/
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -13,9 +14,10 @@ header{
     justify-content: space-around;
     display: flex;
     
+    
 
 }
-.aciertos{
+.acierto{
     width: 8%;
     height: 60%;
     border-radius: 10px;
@@ -23,7 +25,7 @@ header{
  
     
 }
-.errores{
+.error{
     width: 8%;
     height: 60%;
     border-radius: 10px;
