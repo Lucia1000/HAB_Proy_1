@@ -15,19 +15,19 @@ const getRandomRGB = () => {
   return [getRandomNum(255), getRandomNum(255), getRandomNum(255)];
 };
 
-//al hacer click en el texto del código RGB me cambie los colores de los li y un nuevo rgb
+//al recargar la página genera colores de los li y un nuevo rgb
 
 const correctColor = getRandomRGB();
 
 const firstColor = [
   correctColor[0] + 50,
-  correctColor[1],
+  correctColor[1] + 30,
   correctColor[2] - 50,
 ];
 
 const secondColor = [
   correctColor[0] + 150,
-  correctColor[1],
+  correctColor[1] + 10,
   correctColor[2] - 20,
 ];
 //paso el array obtenido a string
