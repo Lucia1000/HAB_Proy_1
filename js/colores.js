@@ -5,6 +5,10 @@ const l1 = document.querySelector("#circulo1");
 const l2 = document.querySelector("#circulo2");
 const l3 = document.querySelector("#circulo3");
 
+const ul = document.querySelector(".circle");
+const acierto = document.querySelector(".aciertos");
+const error = document.querySelector(".errores");
+
 //Genero numeros aleatorios de 0 a 255 (para el rgb)
 const getRandomNum = (max) => {
   return Math.floor(Math.random() * (max + 1));
@@ -20,14 +24,14 @@ const getRandomRGB = () => {
 const correctColor = getRandomRGB();
 
 const firstColor = [
-  correctColor[0] + 50,
-  correctColor[1] + 30,
-  correctColor[2] - 50,
+  correctColor[0] - 80,
+  correctColor[1],
+  correctColor[2] + 50,
 ];
 
 const secondColor = [
-  correctColor[0] + 150,
-  correctColor[1] + 10,
+  correctColor[0],
+  correctColor[1] + 50,
   correctColor[2] - 20,
 ];
 //paso el array obtenido a string
@@ -42,17 +46,21 @@ l2.style.backgroundColor = rgbArrayToString(firstColor);
 l3.style.backgroundColor = rgbArrayToString(secondColor);
 
 // -TENGO Q MOVER LOS l1, L2 Y L3 PARA Q NO SE SEPA CUAL ES
-// -(si click en el l1 , sumo un acierto(HACER CONTADOR)...)
+console.log(l1.nextElementSibling);
 
-//el div me sume 1 punto o me quite si es un error (cuando llegue a 3 stop: ganas o pierdes)
-// div.addEventListener("click", (event) => {
-//   if (event.target !== event.currentTarget) {
-//     event.target.textContent = +event.target.textContent + 1;
-//   }else
-// });
+//Si click en el l1 , sumo un acierto, si no resto 1 (HACER CONTADOR)...)
 
-// div.addEventListener("click", () => {
-//     alert("WINNER!!");
-//   });
+// for (let li = 0; li < 3; li++) {
+ul.addEventListener("click", () => {
+  if (codigoRgb.textContent === l1.style.backgroundColor) {
+    acierto.textContent = +acierto.textContent + 1;
+  } else {
+    error.textContent = +error.textContent + 1;
+  }
+});
 
-//BOTÓN DE stopGame(explicado ja_dia8_events)
+// if (acierto === 3) {
+//   alert("GANADOR!!!");
+// } else if (error === 3) {
+//   alert("PERDISTE. INTÉNTALO OTRA VEZ!!!");
+// }
