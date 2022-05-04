@@ -7,21 +7,29 @@
     <title>Primer Proyecto</title>
     <meta name="author" content="Cecilia_Lucía" />
     <meta name="description" content="Primer_Proyecto" />
-    <link rel="icon" href="./icons/colores.ico" />
+    <link rel="icon" href="./img/icons/colores.ico" />
     <link rel="stylesheet" href="./css/colores.css">
     <title>Adivina el color</title>
   </head>
   <body>
+    <!-- HEADER PARTE 1-->
       <header>
-        <div class="aciertos">Aciertos:2</div>
-        <div class="errores">Errores:1</div>
-          <h1>Adivina el color</h1>
-          <div class="ganador">Ganador</div>
+        <div id="aciertos">
+          <p>Aciertos: 0</p>
+        </div>
+        <h1>Adivina el color</h1>
+        <div id="errores">
+           <p>Errores: 0</p>
+        </div>
+          
       </header>
-    <main>
-        <section id="rgb">
+      <!-- START GAME PARTE 2-->
+    <main id="game-color">
+        <section id="rgb_game">
             <p class="color_rgb">Código RGB</p>
         </section>
+
+        <!-- COLORES -->
         <section id="colores">
           <ul>
             <li id="circulo1" class="circle">Uno</li>
