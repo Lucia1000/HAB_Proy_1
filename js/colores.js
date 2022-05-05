@@ -5,7 +5,7 @@ const l1 = document.querySelector("#circulo1");
 const l2 = document.querySelector("#circulo2");
 const l3 = document.querySelector("#circulo3");
 
-const ul = document.querySelector(".circle");
+const ul = document.querySelector("ul");
 const acierto = document.querySelector(".aciertos");
 const error = document.querySelector(".errores");
 
@@ -21,38 +21,37 @@ const getRandomRGB = () => {
 
 //al recargar la página genera colores de los li y un nuevo rgb
 
-const correctColor = getRandomRGB();
+const firstColor = getRandomRGB();
 
-const firstColor = [
-  correctColor[0] - 80,
-  correctColor[1],
-  correctColor[2] + 50,
-];
+const secondColor = [firstColor[0] - 80, firstColor[1], firstColor[2] + 50];
 
-const secondColor = [
-  correctColor[0],
-  correctColor[1] + 50,
-  correctColor[2] - 20,
-];
+const thirdColor = [firstColor[0], firstColor[1] + 50, firstColor[2] - 20];
 //paso el array obtenido a string
 const rgbArrayToString = (rgbArray) => {
-  return `rgb(${rgbArray[0]},${rgbArray[1]},${rgbArray[2]})`;
+  return `rgb(${rgbArray[0]}, ${rgbArray[1]}, ${rgbArray[2]})`;
 };
 
-codigoRgb.textContent = getRandomRGB();
+l1.style.backgroundColor = rgbArrayToString(firstColor);
+l2.style.backgroundColor = rgbArrayToString(secondColor);
+l3.style.backgroundColor = rgbArrayToString(thirdColor);
 
-l1.style.backgroundColor = rgbArrayToString(correctColor);
-l2.style.backgroundColor = rgbArrayToString(firstColor);
-l3.style.backgroundColor = rgbArrayToString(secondColor);
+const array = [firstColor, secondColor, thirdColor];
 
 // -TENGO Q MOVER LOS l1, L2 Y L3 PARA Q NO SE SEPA CUAL ES
-console.log(l1.nextElementSibling);
+
+const colorCorrecto = array[getRandomNum(2)];
+console.log(colorCorrecto);
+codigoRgb.textContent = rgbArrayToString(colorCorrecto);
 
 //Si click en el l1 , sumo un acierto, si no resto 1 (HACER CONTADOR)...)
 
 // for (let li = 0; li < 3; li++) {
-ul.addEventListener("click", () => {
-  if (codigoRgb.textContent === l1.style.backgroundColor) {
+ul.addEventListener("click", (event) => {
+  console.log(
+    rgbArrayToString(colorCorrecto),
+    event.target.style.backgroundColor
+  );
+  if (rgbArrayToString(colorCorrecto) === event.target.style.backgroundColor) {
     acierto.textContent = +acierto.textContent + 1;
   } else {
     error.textContent = +error.textContent + 1;
