@@ -63,7 +63,7 @@ h1{
 #colores{
     height: 25vw;
     width: 100%;
-    background: rgb(199, 159, 73);
+    /*background: rgb(199, 159, 73);*/
 }
 ul{
     display: flex;

@@ -37,7 +37,7 @@ console.log(randomColorRGB());
 
 const valorRandomColor = () => {
   let randomColores = randomColorRGB();
-  if (randomColores === codigoRgb.innerHTML) {
+  if (randomColores === codigoRgb.textContent) {//textcontent
     randomColores = randomColorRGB();
   }
   return randomColores;
@@ -49,7 +49,7 @@ const printCircle = () => {
   const colorsCircles = Math.floor(Math.random() * 3);
   for (let i = 0; i < circles.length; i++) {
     if (i === colorsCircles) {
-      circles[i].style.backgroundColor = codigoRgb.innerHTML
+      circles[i].style.backgroundColor = codigoRgb.textContent
     } else {
       circles[i].style.backgroundColor = valorRandomColor();
     }
@@ -62,7 +62,7 @@ const pickColor = (e) => {
   if (resultado.innerHTML === 'Ganaste') {
     alerta("cambia color");
   } else if (
-    colorGanador.style.backgroundColor = codigoRgb.innerHTML.toLowerCase()
+    colorGanador.style.backgroundColor === codigoRgb.innerHTML.toLowerCase()
   ) {
     resultado.innerHTML = 'Ganaste';
     aciertos++;
@@ -73,8 +73,9 @@ const pickColor = (e) => {
     resultado.innerHTML = 'Incorrecto, prueba de nuevo';
     errores++;
     contadorErrores.innerHTML = errores;
+    console.log(errores);
   if (errores === 3) {
-      respuesta.innerHTML = 'Lo siento, perdiste';//sepinta html
+      resultado.innerHTML = 'Lo siento, perdiste';//sepinta html
 
       alert('perdiste');
     }
