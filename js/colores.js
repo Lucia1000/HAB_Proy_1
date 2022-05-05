@@ -56,9 +56,9 @@ const printCircle = () => {
   }
   //console.log(colorsCircles())
 }
-/*5. seleccionar color ganador */
-const pickColor = (event) => {
-  const colorGanador = event.target; //devuelve el elemento DOM que desencadenó un evento específico, por lo que podemos recuperar cualquier propiedad/atributo que tenga un valor
+/*5. seleccionar color ganador y se realiza el contador de aciertos y errores*/
+const pickColor = (e) => {
+  const colorGanador = e.target; //devuelve el elemento DOM que desencadenó un evento específico, por lo que podemos recuperar cualquier propiedad/atributo que tenga un valor
   if (resultado.innerHTML === 'Ganaste') {
     alerta("cambia color");
   } else if (
