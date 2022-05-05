@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 @import url(../css/style.css);
 
+<<<<<<< HEAD
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -20,6 +21,117 @@ header {
   height: 60%;
   border-radius: 10px;
   background: rgb(157, 65, 157);
+=======
+body{
+    min-height: 100vh;
+    /*font-family: Muli,sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header{
+    
+    height: 80px;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    
+    background: #bcdae1;
+    box-shadow: inset 14px 14px 28px #859ba0,
+            inset -14px -14px 28px #f3ffff;
+}
+
+
+#counter{
+    display: flex;
+}
+#acierto{
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+    background: rgb(157, 65, 157);
+ 
+    
+}
+#error{
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+    background: rgb(212, 165, 212);
+    
+}
+h1{
+    font-size: 2em;
+}
+
+#resultado {
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 0 1px 1px var(--shadow-color);
+  font-size: 1.3rem;
+}
+
+
+
+
+#rgb_game{
+    height: 20vw;
+    width: 100%;
+    background: rgb(73, 186, 199);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5% 0 0 0;
+}
+#colores{
+    height: 25vw;
+    width: 100%;
+    /*background: rgb(199, 159, 73);*/
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.circle{
+    margin-top:2%;
+    border-radius: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto 0;
+    background-color: #3b4ba3;
+    border-radius: 50%;
+    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);  
+    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+}
+
+#circle1{
+    height:100px;
+   width:100px;
+   background:#E76AFA;
+    text-align: center;
+   border-radius:50px;
+   
+   
+}
+#circle2{
+    height:100px;
+   width:100px;
+   text-align: center;
+   background:#E76AFA;
+   border-radius:50px;
+}
+#circle3{
+    height:100px;
+    width:100px;
+    background:#E76AFA;
+    text-align: center;
+    border-radius:50px;
+>>>>>>> ebc146c43c39d13dbafee63a41be8ff438a074b6
 }
 
 .errores {

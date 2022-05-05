@@ -7,6 +7,7 @@
     <title>Proyecto I : ADIVINA EL COLOR</title>
     <meta name="author" content="Cecilia_Lucía" />
     <meta name="description" content="Primer_Proyecto" />
+<<<<<<< HEAD
     <link rel="icon" href="./icons/colores.ico" />
     <link rel="stylesheet" href="./css/colores.css" />
     <title>Adivina el color</title>
@@ -34,5 +35,50 @@
       <p>Cecilia_Lucía © MAYO-2022</p>
     </footer>
     <script src="js/colores.js"></script>
+=======
+    <link rel="icon" href="./img/icons/colores.ico" />
+    <link rel="stylesheet" href="./css/colores.css">
+    <title>Adivina el color</title>
+  </head>
+  <body>
+    <!-- HEADER PARTE 1-->
+      <header>
+        <div id="counter">
+          <div id="acierto">
+          <p>Aciertos: 0</p>
+        </div>
+        <div id="error">
+           <p>Errores: 0</p>
+        </div>
+        </div>
+         <h1>Adivina el color</h1>
+          
+      </header>
+      <!-- START GAME PARTE 2-->
+    <main id="game-color">
+      <!-- section donde se pinta el color y da una respuesta acierto o error -->
+        <section id="rgb_game">
+            <p class="color_rgb">Selecciona el color que corresponda según RGB</p>
+            <h2 class="color_rgb">Código RGB</h2>
+            <!-- RGB CON 3 VALORES -->
+            <h3 id="valorRgb"></h3>
+            <!-- Acierto o Error -->
+            <h3 id="resultado"></h3>
+        </section>
+
+        <!-- COLORES RANDOM -->
+        <section id="colores">
+          <ul>
+            <li id="circle1" class="circle"></li>
+            <li id="circle2" class="circle"></li>
+            <li id="circle3" class="circle"></li>
+          </ul>
+      </section>
+    </main>
+    <footer>  
+      <p> Cecilia_Lucía © MAYO-2022</p>
+   </footer>
+   <script src="./js/colores.js"></script>
+>>>>>>> ebc146c43c39d13dbafee63a41be8ff438a074b6
   </body>
 </html>
