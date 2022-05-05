@@ -1,27 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 @import url(../css/style.css);
 
-<<<<<<< HEAD
-body {
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-header {
-  background: blue;
-  height: 80px;
-  position: relative;
-  justify-content: space-around;
-  display: flex;
-}
-
-.aciertos {
-  width: 8%;
-  height: 60%;
-  border-radius: 10px;
-  background: rgb(157, 65, 157);
-=======
 body{
     min-height: 100vh;
     /*font-family: Muli,sans-serif;*/
@@ -131,7 +110,6 @@ ul{
     background:#E76AFA;
     text-align: center;
     border-radius:50px;
->>>>>>> ebc146c43c39d13dbafee63a41be8ff438a074b6
 }
 
 .errores {
