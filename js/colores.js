@@ -61,6 +61,20 @@ const clickHandler = (event) => {
 
     if (+acierto.textContent === 3) {
       resultado.textContent = "Ganaste!!!";
+
+      //alert("ganaste")
+      Swal.fire({
+      icon: 'success',
+      title: 'Buen Trabajo!',
+      text: 'Te reto una vez más!',
+      showCloseButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+      '<div class="alert" onClick="document.location.reload(true)">New Game</div>',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+    })
+
+
       ul.removeEventListener("click", clickHandler);
     } else {
       start();
@@ -70,6 +84,18 @@ const clickHandler = (event) => {
 
     if (+error.textContent === 3) {
       resultado.textContent = "Perdiste!!";
+      
+      Swal.fire({
+      icon: 'error',
+      title: 'Oops...perdiste!',
+      text: 'Intentalo de nuevo!',
+      showCloseButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+      '<div class="alert" onClick="document.location.reload(true)">New Game</div>',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+    })
+
       ul.removeEventListener("click", clickHandler);
     } else {
       start();
