@@ -60,7 +60,7 @@ const clickHandler = (event) => {
     acierto.textContent = +acierto.textContent + 1;
 
     if (+acierto.textContent === 3) {
-      resultado.textContent = "Ganaste!!!";
+      resultado.textContent = "✅";
 
       //alert("ganaste")
       Swal.fire({
@@ -83,7 +83,7 @@ const clickHandler = (event) => {
     error.textContent = +error.textContent + 1;
 
     if (+error.textContent === 3) {
-      resultado.textContent = "Perdiste!!";
+      resultado.textContent = "❌ ";
       
       Swal.fire({
       icon: 'error',
@@ -92,7 +92,7 @@ const clickHandler = (event) => {
       showCloseButton: true,
       focusConfirm: false,
       confirmButtonText:
-      '<div class="alert" onClick="document.location.reload(true)">New Game</div>',
+      '<div  class="alert" onClick="document.location.reload(true)">New Game</div>',
       confirmButtonAriaLabel: 'Thumbs up, great!',
     })
 
